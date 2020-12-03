@@ -1,20 +1,20 @@
-import React from 'react';
-// import '../styles/SearchBox.css';
+import React from "react";
+import "../styles/SearchBox.css";
 
-function Searchbox({ handleSearchChange }) {
+function SearchBox({ handleSearchChange }) {
     return (
         <div className="searchbox">
             <form className="form-inline">
-                <input 
-                className="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                onChange={e => handleSearchChange(e)}
+                <input
+                    className="form-control"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    onChange={e => handleSearchChange(e)}
                 />
             </form>
         </div>
     );
 }
 
-export default Searchbox;
+export default SearchBox;
